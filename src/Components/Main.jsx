@@ -51,6 +51,11 @@ const Main = () => {
       <div className="md:flex items-center px-5 justify-center py-10 gap-10">
         <input
           onChange={handleSearch}
+          onKeyDown={(e) =>{
+            if(e.key === "Enter"){
+              myFun();
+            }
+          }}
           type="text"
           placeholder="Search Images"
           className="p-3 rounded-lg w-full px-5 md:w-100 bg-gray-100 text-black text-xl"
