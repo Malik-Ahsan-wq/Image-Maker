@@ -2,13 +2,15 @@ import React, { useState, useEffect } from "react";
 import { FaDownload, FaHeart, FaRegBookmark } from "react-icons/fa";
 
 const Main = () => {
-  const ACCESS_KEY = "GPVZFZgExai1Oeb4b6zWYUXFvpelb6pqzhcQlU5ld7U";
   const [search, setSearch] = useState("");
   const [images, setImages] = useState([]);
 
   const handleSearch = (event) => {
     setSearch(event.target.value);
   };
+
+  
+  const ACCESS_KEY = import.meta.env.VITE_ACCESS_KEY;
 
   // 🔍 Search-based image fetch
   const myFun = async () => {
