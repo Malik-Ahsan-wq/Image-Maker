@@ -53,7 +53,7 @@ const Main = () => {
           onChange={handleSearch}
           onKeyDown={(e) =>{
             if(e.key === "Enter"){
-              myFun();
+              myFun(); 
             }
           }}
           type="text"
